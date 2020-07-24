@@ -10,6 +10,9 @@ namespace CursoMVC.Models
     public class Context : DbContext
     {
         public DbSet<Categoria> Categorias { get; set; }
+
+        public DbSet<Produto> Produtos { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             DbContextOptionsBuilder dbContextOptionsBuilder = optionsBuilder.UseNpgsql(@"Host = ec2-54-234-44-238.compute-1.amazonaws.com;" +
