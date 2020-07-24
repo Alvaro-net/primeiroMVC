@@ -11,12 +11,13 @@ namespace CursoMVC.Models
     {
         public DbSet<Categoria> Categorias { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-         => optionsBuilder.UseNpgsql("Host = ec2-18-235-109-97.compute-1.amazonaws.com;" +
-             "Port = 5432;" +
-             "Database = doecdpeqdn0qn; " +
-             "Username = eqczgdacqdibgl; " +
-             "Password = a3f204f94fb4e397858e06fc1103390d15a91e1c86603734932dd473e8fe5632;" +
-             "Pooling=true;SSL Mode=Require;TrustServerCertificate=True;");
-         
+        {
+            DbContextOptionsBuilder dbContextOptionsBuilder = optionsBuilder.UseNpgsql(@"Host = ec2-54-234-44-238.compute-1.amazonaws.com;" +
+                        "Port = 5432;" +
+                        "Database = dfsct021grktl9; " +
+                        "Username = aqunoapqdliwkg; " +
+                        "Password = '70de39cbd7c7eec963b7b84f4152767308d54d812848c0a948881b339b175f25';" +
+                        "Pooling=True;SSL Mode=Require;TrustServerCertificate=True;");
+        }
     }
 }
