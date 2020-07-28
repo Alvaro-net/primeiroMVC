@@ -28,7 +28,6 @@ namespace CursoMVC.Migrations
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
                     Descricao = table.Column<string>(nullable: true),
                     Quantidade = table.Column<int>(nullable: false),
-                    MyProperty = table.Column<int>(nullable: false),
                     CategoriaId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>

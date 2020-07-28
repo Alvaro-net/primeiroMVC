@@ -46,9 +46,6 @@ namespace CursoMVC.Migrations
                     b.Property<string>("Descricao")
                         .HasColumnType("text");
 
-                    b.Property<int>("MyProperty")
-                        .HasColumnType("integer");
-
                     b.Property<int>("Quantidade")
                         .HasColumnType("integer");
 
